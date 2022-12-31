@@ -23,7 +23,7 @@ function draw() {
       document.getElementById("status1").innerHTML = "Status: Objeto Detectado";
 
         
-        if(objects.[0]label == 'person'){
+        if(objects[0].label == 'person'){
           document.getElementById("status1").innerHTML = "Status: Achei O Bebe";
 
           document.getElementById("play").innerHTML = "trecos "+objects.length;
