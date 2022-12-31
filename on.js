@@ -23,10 +23,7 @@ function draw() {
       document.getElementById("status1").innerHTML = "Status: Objeto Detectado";
 
         
-        if(objects.[0]label != 'person'){
-          music.play();
-        }
-        else{
+        if(objects.[0]label == 'person'){
           document.getElementById("status1").innerHTML = "Status: Achei O Bebe";
 
           document.getElementById("play").innerHTML = "trecos "+objects.length;
@@ -36,6 +33,9 @@ function draw() {
           noFill();
           stroke("#FF0000");
           rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
+        }
+        else{
+          music.play();
         }
       
 
