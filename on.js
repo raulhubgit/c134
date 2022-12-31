@@ -23,7 +23,7 @@ function draw() {
       document.getElementById("status1").innerHTML = "Status: Objeto Detectado";
 
         
-        if(objects.length == 0){
+        if(objects.[0]label != 'person'){
           music.play();
         }
         else{
